@@ -10,8 +10,11 @@
             <div class="card" style="width: 18rem;">
                 <img src="{{URL($foto)}}" class="card-img-top img-fluid. max-width: 100% height: auto" alt="Foto Profil">
                 <div class="card-body">
-                    <h5 class="card-title">{{$nama}}</h5>
-                    <p class="card-text">{{$kelas}}</p>
+                    <h5 class="card-title">{{ $student->nama }}</h5>
+                    <p class="card-text">{{ $student->tgl_lahir }}</p>
+                    <p class="card-text">{{ $student->nis }}</p>
+                    <p class="card-text">{{ $student->kelas }}</p>
+                    <p class="card-text">{{ $student->alamat }}</p>
                 </div>
             </div>
         </div>
