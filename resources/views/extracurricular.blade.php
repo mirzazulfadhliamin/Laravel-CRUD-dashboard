@@ -6,7 +6,7 @@
 @section('content')
 <div class="container mt-4">
     <h1>Welcome to My {{$halaman}}</h1>
-    <table class="table table-striped">
+    <table class="table table-auto text-light">
         <thead class="thead-dark">
           <tr>
             <th scope="col">ID</th>

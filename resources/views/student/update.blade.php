@@ -22,8 +22,20 @@
           <input type="text" name="nama" class="form-control" id="nama" placeholder="Enter student name" value={{ $student->nama }}>
         </div>
         <div class="form-group">
-          <label for="kelas">Kelas</label>
-          <input type="text" name="kelas" class="form-control" id="kelas" placeholder="Enter class" value={{ $student->kelas }}>
+            <label for="kelas-id">Kelas</label>
+            <select name="kelas_id" class="form-control @error('kelas') is-invalid @enderror" id="kelas">
+                <option value="">Select Class</option>
+                @foreach($grades as $grade)
+
+                <option value="{{ $grade->id}}" {{ $grade->id == $student->kelas_id ? 'selected' : '' }}>
+                    {{ $grade->nama }}
+                </option>
+                @endforeach
+            </select>
+
+            @error('kelas_id')
+                <strong class="text-danger">{{ $message }}</strong>
+            @enderror
         </div>
         <div class="form-group">
             <label for="alamat">Alamat</label>

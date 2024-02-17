@@ -11,6 +11,7 @@
         "vite": "^4.0.0"
     },
     "dependencies": {
+        "@jkryszto/mdb-for-laravel": "^1.0.0",
         "mdb-ui-kit": "^6.4.2"
     }
 }

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthenticationController;
 use App\Http\Controllers\StudentController;
 use App\Models\Student;
 use Illuminate\Http\Request;
@@ -21,3 +22,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 // Route::post('/students/create',[StudentController::class,'create']);
+
+
+// Route::post('/login', [AuthenticationController::class, 'login']);
+

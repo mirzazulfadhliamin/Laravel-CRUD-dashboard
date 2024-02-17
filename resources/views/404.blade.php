@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
+
 <!--font awesome icon-->
 <!--<link rel="stylesheet" href="../fonts/css/all.min.css">-->
-	
+
 <!--boxicons-->
 <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
-	
+
 <!--custom css file-->
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <title>Responsive 404 website - jeandoe</title>
@@ -23,22 +23,22 @@
 
 :root{
 	--header-height: 3.5rem;
-	
+
 	--main-clr: #0f4c20;
 	--black: #121413;
 	--white: #fdf;
 	--dark-green: #041609;
-	
+
 	--body-font: 'Space Grotesk', 'Ubumtu Mono',sans-serif;
-	
+
 /*
 	typography
-	
+
 	b-fsz: biggest font size,
 	n-fsz: normal font size,
 	s-fsz: smaller font size
 */
-	
+
 	--b-fsz: 2.375rem;
 	--n-fsz: .938rem;
 	--s-fsz: .75rem;
@@ -266,17 +266,17 @@ img{
 	.nav{
 		height: calc(var(--header-height) + 1.5rem);
 	}
-	
+
 	.nav_toggle,
 	.nav_close{
 		display: none;
 	}
-	
+
 	.nav_list{
 		flex-direction: row;
 		column-gap: 3.5rem;
 	}
-	
+
 }
 
 
@@ -286,11 +286,11 @@ img{
 		align-items: center;
 		column-gap: 2rem;
 	}
-	
+
 	.home_data{
 		text-align: initial;
 	}
-	
+
 	.home_img img{
 		width: 400px;
 	}
@@ -326,13 +326,13 @@ img{
 
 </style>
 <body>
-	
+
 <!--header section-->
 
 {{-- <header class="header">
 	<nav class="nav container">
 		<a href="#" class="nav_logo">JD.COMPANY</a>
-		
+
 		<div class="nav_menu" id="nav-menu">
 			<ul class="nav_list">
 				<li class="nav_item"><a href="#" class="nav_link">Home</a></li>
@@ -343,7 +343,7 @@ img{
 				<i class="bx bx-x"></i>
 			</div>
 		</div>
-		
+
 		<!--Toggle button-->
 		<div class="nav_toggle" id="nav-toggle">
 			<i class="bx bx-grid-alt"></i>
@@ -360,15 +360,15 @@ img{
 				<span>Error 404</span>
 				<h1 class="home_title">Nice Try</h1>
 				<p>we can't seem to find the page <br> you are looking for.</p>
-				<a href="../home" class="btn">Go Home</a>
+				<a href="/" class="btn">Go Home</a>
 			</div>
-		
+
 			<div class="home_img">
 				<img src="{{URL('images/ghost2.png')}}" alt="ghost img">
 				<div class="home_shadow"></div>
 			</div>
 		</div>
-		
+
 		<footer class="home_footer">
 			<span>(+62) 2322-32132</span>
 			<span>|</span>
@@ -376,12 +376,12 @@ img{
 		</footer>
 	</section>
 </main>
-	
+
 <!--scrollreveal-->
 <script src="{{URL('js/scrollreveal.min.js')}}"></script>
-	
+
 <!--main js-->
 <script src="{{URL('js/main.js')}}"></script>
-	
+
 </body>
 </html>

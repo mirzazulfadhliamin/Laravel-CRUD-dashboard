@@ -13,7 +13,7 @@
                     <h5 class="card-title">{{ $student->nama }}</h5>
                     <p class="card-text">{{ $student->tgl_lahir }}</p>
                     <p class="card-text">{{ $student->nis }}</p>
-                    <p class="card-text">{{ $student->kelas }}</p>
+                    <p class="card-text">{{ $student->kelas->nama }}</p>
                     <p class="card-text">{{ $student->alamat }}</p>
                 </div>
             </div>
