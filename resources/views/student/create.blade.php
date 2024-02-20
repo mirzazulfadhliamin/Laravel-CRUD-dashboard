@@ -4,7 +4,11 @@
 <div class="container mt-4">
   <h1 class="text-center mb-4">Welcome to My {{$halaman}}</h1>
 
-  <a href="{{ url('/student') }}" class="btn btn-primary mb-4">Back to List</a>
+  @if(auth()->check())
+    <a href="{{ url('/dashboard') }}" class="btn btn-primary mb-4">Back to Dashboard</a>
+@else
+    <a href="{{ url('/student') }}" class="btn btn-primary mb-4">Back to List</a>
+@endif
 
   <div class="card">
     <div class="card-header">

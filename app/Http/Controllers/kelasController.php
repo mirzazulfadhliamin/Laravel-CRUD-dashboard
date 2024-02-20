@@ -47,8 +47,8 @@ class kelasController extends Controller
         $result = kelas::create($validated);
 
         if ($result) {
-            return redirect('/student/kelas')->with('success', 'Data siswa berhasil ditambahkan');
-        }
+            return redirect()->back()->with('success', 'Data kelas berhasil ditambahkan');
+  }
     }
 
 public function destroy($id){
@@ -56,7 +56,7 @@ public function destroy($id){
 
     $result = $data->delete();
  if($result){
-    return redirect('/student/kelas')->with('success', 'Data siswa berhasil dihapus');
+    return redirect()->back()->with('success', 'Data kelas berhasil dihapus');
  }
 
 }
@@ -72,7 +72,7 @@ public function update(Request $request, $id){
 
     $data->update($validated);
 
-    return redirect('/student/kelas')->with('success', 'Student updated successfully');
+    return redirect()->back()->with('success', 'Data siswa berhasil diupdate');
 }
 
 

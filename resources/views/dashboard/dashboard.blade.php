@@ -62,6 +62,12 @@
             </div>
 @else
 
+@if (session()->has('success'))
+<div class="alert alert-success col-lg-12" role="alert">
+    {{ session('success') }}
+</div>
+@endif
+
 <a href="/student/create"> <button type="button" class="btn btn-light ">ADD</button></a>
 
 

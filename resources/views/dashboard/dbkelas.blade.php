@@ -62,6 +62,12 @@
             </div>
 @else
 
+@if (session()->has('success'))
+<div class="alert alert-success col-lg-12" role="alert">
+    {{ session('success') }}
+</div>
+@endif
+
 <button type="button" class="btn btn-light " data-bs-toggle="modal" data-bs-target="#classModal">ADD</button>
 
 <div class="container ">

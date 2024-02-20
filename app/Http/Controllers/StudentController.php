@@ -83,7 +83,7 @@ class StudentController extends Controller
     $result =  Student::create($validated);
 
     if($result){
-   return redirect('/student')->with('success', 'Data siswa berhasil ditambahkan');
+        return redirect()->back()->with('success', 'Data siswa berhasil ditambahkan');
 
     }
 }
@@ -93,8 +93,8 @@ public function destroy($id){
 
     $result = $data->delete();
  if($result){
-    return redirect('/student')->with('success', 'Data siswa berhasil dihapus');
- }
+    return redirect()->back()->with('success', 'Data siswa berhasil dihapus');
+}
 
 }
 
@@ -111,7 +111,7 @@ public function update(Request $request, $id){
 
     $data->update($validated);
 
-    return redirect('/student')->with('success', 'Student updated successfully');
+    return redirect()->back()->with('success', 'Data siswa berhasil diupdate');
 }
 
 
